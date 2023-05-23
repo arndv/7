@@ -186,7 +186,7 @@ public T Pop()//2т
                                            
                                            
                                            
-    ![image](https://github.com/arndv/7/assets/125039034/e73791cc-dd4a-47c9-898f-56240623d2dc)
+![image](https://github.com/arndv/7/assets/125039034/e73791cc-dd4a-47c9-898f-56240623d2dc)
 
 
                                            
