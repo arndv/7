@@ -46,7 +46,6 @@ private static void Swap(List<int> list, int index, int min)
 Ако имаме два вложени цикъла от 1 до N, сложността им е квадратична – O(N2).
   
   
-  // 
  
   var collection = Console.ReadLine().Split().Select(int.Parse).ToList(); 
             for (int index = 0; index < collection.Count; index++)
@@ -89,7 +88,7 @@ private static void Swap(List<int> list, int index, int min)
 Сложност на алгоритъм е [груба оценка на броя стъпки], които алгоритъмът ще направи в зависимост от [размера на входните данни]. Това е груба оценка, която се интересува от [порядъка на броя стъпки], а не от [точния им брой].
 
                                                            
- ///
+
                                                            
                                                            
        var list = Console.ReadLine().Split().Select(int.Parse).ToList();
@@ -138,7 +137,6 @@ Console.WriteLine(string.Join(" ", list));
   ![image](https://github.com/arndv/7/assets/125039034/8fb67b68-9cc7-4539-a4ec-57f2dcc58640)
 
   
-  ///
   
   var list = Console.ReadLine().Split().Select(int.Parse).ToList();
 for (int j = 0; j <= list.Count - 2; j++)//2т
@@ -165,8 +163,11 @@ Console.WriteLine(string.Join(" ", list));
 Забележка
 Грешката в кода е, че методът Pop(int index) получава цяло число, което вътре в метода се използва за намиране на елемента в масива и премахването на този елемент. По дефиниция линейната структура стек не работи така. Правилото за работа със стек е "първи влиза - първи излиза". Нямаме право да достъпваме елементите по индекс, освен само и единствено за четене. Когато правим имплементацията за премахване на елемент от стек винаги премахваме последния елемент - в случая трябва да използваме броя на елементите (Count) на мястото на параметъра Index, за да премахнем последния елемент от масива в класа. И самия метод Pop() не трябва да приема параметър.//2т
 
-public T Pop()//2т
-        {
+       
+       
+       
+            public T Pop()//2т
+            {
             if (this.Count == 0)
             {
                 throw new InvalidOperationException("Empty stack");
@@ -229,7 +230,10 @@ public T Pop()//2т
 
                                           
   ![image](https://github.com/arndv/7/assets/125039034/052b4b9e-26ac-4790-88f6-d048cd78040c)
-//
+
+                                           
+                                           
+                                           
                                            var collection = Console.ReadLine().Split().Select(int.Parse).ToList();
             for (int index = 0; index < collection.Count; index++)
             {
