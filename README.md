@@ -21,7 +21,7 @@
 Дайте пример с C# код, за метод който да сортира  елементите от списъка List<int> list = new List<int>() { 12, 8, 10, 2, 9, 6, 1}; посредством алгоритъма за сортиране  чрез метода на мехурчето.
 
 
- public static void BubbleSortWithFor(List<int> list)
+       public static void BubbleSortWithFor(List<int> list)
         {
             for (int j = 0; j <= list.Count - 2; j++)
             {
@@ -47,6 +47,7 @@ private static void Swap(List<int> list, int index, int min)
   
   
   // 
+ 
   var collection = Console.ReadLine().Split().Select(int.Parse).ToList(); 
             for (int index = 0; index < collection.Count; index++)
             {
@@ -88,17 +89,17 @@ private static void Swap(List<int> list, int index, int min)
 Сложност на алгоритъм е [груба оценка на броя стъпки], които алгоритъмът ще направи в зависимост от [размера на входните данни]. Това е груба оценка, която се интересува от [порядъка на броя стъпки], а не от [точния им брой].
 
                                                            
-                                                           ///
+ ///
                                                            
                                                            
- var list = Console.ReadLine().Split().Select(int.Parse).ToList();
-for (int j = 0; j <= list.Count - 2; j++)//2т
-{
-    for (int i = 0; i <= list.Count - 2; i++)
+       var list = Console.ReadLine().Split().Select(int.Parse).ToList();
+      for (int j = 0; j <= list.Count - 2; j++)//2т
     {
+       for (int i = 0; i <= list.Count - 2; i++)
+     {
         if (list[i] > list[i + 1])//2т
         {
-            int temp = list[i];//2т
+             int temp = list[i];//2т
             list[i] = list[i+1];
             list[i+1] = temp;//2т
         }
